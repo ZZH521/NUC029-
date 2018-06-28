@@ -1,0 +1,1161 @@
+Component: ARM Compiler 5.05 update 1 (build 106) Tool: armlink [4d0efa]
+
+==============================================================================
+
+Section Cross References
+
+    system_nuc029xan.o(i.CLK_GetPLLClockFreq) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    system_nuc029xan.o(i.SystemCoreClockUpdate) refers to system_nuc029xan.o(i.CLK_GetPLLClockFreq) for CLK_GetPLLClockFreq
+    system_nuc029xan.o(i.SystemCoreClockUpdate) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    system_nuc029xan.o(i.SystemCoreClockUpdate) refers to system_nuc029xan.o(.data) for PllClock
+    system_nuc029xan.o(i.SystemCoreClockUpdate) refers to system_nuc029xan.o(.constdata) for gau32ClkSrcTbl
+    startup_nuc029xan.o(STACK) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_nuc029xan.o(HEAP) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_nuc029xan.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_nuc029xan.o(RESET) refers to startup_nuc029xan.o(STACK) for __initial_sp
+    startup_nuc029xan.o(RESET) refers to startup_nuc029xan.o(.text) for Reset_Handler
+    startup_nuc029xan.o(RESET) refers to systick.o(i.SysTick_Handler) for SysTick_Handler
+    startup_nuc029xan.o(RESET) refers to 485_driver.o(i.UART1_IRQHandler) for UART1_IRQHandler
+    startup_nuc029xan.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
+    startup_nuc029xan.o(.text) refers to system_nuc029xan.o(i.SystemInit) for SystemInit
+    startup_nuc029xan.o(.text) refers to __main.o(!!!main) for __main
+    startup_nuc029xan.o(.text) refers to startup_nuc029xan.o(HEAP) for Heap_Mem
+    startup_nuc029xan.o(.text) refers to startup_nuc029xan.o(STACK) for Stack_Mem
+    br262_driver.o(i.BR262_Reset) refers to i2c.o(i.I2C0SlaveRegWrite_WithoutData) for I2C0SlaveRegWrite_WithoutData
+    br262_driver.o(i.Change_BR262_DeviceMode) refers to i2c.o(i.I2C0SlaveRegWrite) for I2C0SlaveRegWrite
+    br262_driver.o(i.Get_Channel0_LongTerm_Energy) refers to i2c.o(i.I2C0SlaveRegRead_2Byte) for I2C0SlaveRegRead_2Byte
+    br262_driver.o(i.Get_Channel0_ShortTerm_Energy) refers to i2c.o(i.I2C0SlaveRegRead_2Byte) for I2C0SlaveRegRead_2Byte
+    br262_driver.o(i.Get_Channel1_LongTerm_Energy) refers to i2c.o(i.I2C0SlaveRegRead_2Byte) for I2C0SlaveRegRead_2Byte
+    br262_driver.o(i.Get_Channel1_ShortTerm_Energy) refers to i2c.o(i.I2C0SlaveRegRead_2Byte) for I2C0SlaveRegRead_2Byte
+    br262_driver.o(i.Get_Master_Volume) refers to i2c.o(i.I2C0SlaveRegReadMany) for I2C0SlaveRegReadMany
+    br262_driver.o(i.Get_Preamp_Gain) refers to i2c.o(i.I2C0SlaveRegRead) for I2C0SlaveRegRead
+    br262_driver.o(i.Init_BR262) refers to br262_driver.o(i.Set_Channel0_TalkMode) for Set_Channel0_TalkMode
+    br262_driver.o(i.Init_BR262) refers to br262_driver.o(i.Set_Channel1_TalkMode) for Set_Channel1_TalkMode
+    br262_driver.o(i.Init_BR262) refers to i2c.o(i.I2C0SlaveRegWrite_4Byte) for I2C0SlaveRegWrite_4Byte
+    br262_driver.o(i.Init_BR262) refers to br262_driver.o(i.Set_Mixing_Destination) for Set_Mixing_Destination
+    br262_driver.o(i.Init_BR262) refers to br262_driver.o(i.Set_Mixing_Ratio) for Set_Mixing_Ratio
+    br262_driver.o(i.Init_BR262) refers to br262_driver.o(i.Set_Channel0_EQ_Gain_Exponent) for Set_Channel0_EQ_Gain_Exponent
+    br262_driver.o(i.Init_BR262) refers to br262_driver.o(i.Set_Channel1_EQ_Gain_Exponent) for Set_Channel1_EQ_Gain_Exponent
+    br262_driver.o(i.Init_BR262) refers to br262_driver.o(i.Set_Preamp_Gain) for Set_Preamp_Gain
+    br262_driver.o(i.Init_BR262) refers to br262_driver.o(i.Change_BR262_DeviceMode) for Change_BR262_DeviceMode
+    br262_driver.o(i.Set_Channel0_EQ_Gain_Exponent) refers to i2c.o(i.I2C0SlaveRegWrite_4Byte) for I2C0SlaveRegWrite_4Byte
+    br262_driver.o(i.Set_Channel0_TalkMode) refers to i2c.o(i.I2C0SlaveRegWrite_4Byte) for I2C0SlaveRegWrite_4Byte
+    br262_driver.o(i.Set_Channel1_EQ_Gain_Exponent) refers to i2c.o(i.I2C0SlaveRegWrite_4Byte) for I2C0SlaveRegWrite_4Byte
+    br262_driver.o(i.Set_Channel1_TalkMode) refers to i2c.o(i.I2C0SlaveRegWrite_4Byte) for I2C0SlaveRegWrite_4Byte
+    br262_driver.o(i.Set_Master_Volume) refers to i2c.o(i.I2C0SlaveRegWrite_3Byte) for I2C0SlaveRegWrite_3Byte
+    br262_driver.o(i.Set_Mixing_Destination) refers to i2c.o(i.I2C0SlaveRegWrite_4Byte) for I2C0SlaveRegWrite_4Byte
+    br262_driver.o(i.Set_Mixing_Ratio) refers to i2c.o(i.I2C0SlaveRegWrite_4Byte) for I2C0SlaveRegWrite_4Byte
+    br262_driver.o(i.Set_NR_Output) refers to i2c.o(i.I2C0SlaveRegWrite_4Byte) for I2C0SlaveRegWrite_4Byte
+    br262_driver.o(i.Set_NS_Param) refers to br262_driver.o(i.Set_Preamp_Gain) for Set_Preamp_Gain
+    br262_driver.o(i.Set_NS_Param) refers to br262_driver.o(i.Set_Channel0_TalkMode) for Set_Channel0_TalkMode
+    br262_driver.o(i.Set_NS_Param) refers to br262_driver.o(i.Set_Channel1_TalkMode) for Set_Channel1_TalkMode
+    br262_driver.o(i.Set_NS_Param) refers to br262_driver.o(i.Set_Mixing_Destination) for Set_Mixing_Destination
+    br262_driver.o(i.Set_NS_Param) refers to br262_driver.o(i.Set_Mixing_Ratio) for Set_Mixing_Ratio
+    br262_driver.o(i.Set_NS_Param) refers to br262_driver.o(i.Set_Channel0_EQ_Gain_Exponent) for Set_Channel0_EQ_Gain_Exponent
+    br262_driver.o(i.Set_NS_Param) refers to br262_driver.o(i.Set_Channel1_EQ_Gain_Exponent) for Set_Channel1_EQ_Gain_Exponent
+    br262_driver.o(i.Set_NS_Param) refers to br262_driver.o(i.Change_BR262_DeviceMode) for Change_BR262_DeviceMode
+    br262_driver.o(i.Set_Preamp_Gain) refers to i2c.o(i.I2C0SlaveRegWrite_2Byte) for I2C0SlaveRegWrite_2Byte
+    detect.o(i.BR262_detect) refers to br262_driver.o(i.Get_Channel0_ShortTerm_Energy) for Get_Channel0_ShortTerm_Energy
+    detect.o(i.BR262_detect) refers to br262_driver.o(i.Get_Channel1_ShortTerm_Energy) for Get_Channel1_ShortTerm_Energy
+    detect.o(i.BR262_detect) refers to detect.o(.data) for g_ch0_shortterm_energy
+    i2c.o(i.I2C0SlaveRegRead) refers to i2c.o(i.IIC_Start) for IIC_Start
+    i2c.o(i.I2C0SlaveRegRead) refers to i2c.o(i.IIC_Write_Byte) for IIC_Write_Byte
+    i2c.o(i.I2C0SlaveRegRead) refers to i2c.o(i.IIC_Wait_Ack) for IIC_Wait_Ack
+    i2c.o(i.I2C0SlaveRegRead) refers to i2c.o(i.IIC_Read_Byte) for IIC_Read_Byte
+    i2c.o(i.I2C0SlaveRegRead) refers to i2c.o(i.IIC_Stop) for IIC_Stop
+    i2c.o(i.I2C0SlaveRegRead) refers to i2c.o(i.delay) for delay
+    i2c.o(i.I2C0SlaveRegReadMany) refers to i2c.o(i.IIC_Start) for IIC_Start
+    i2c.o(i.I2C0SlaveRegReadMany) refers to i2c.o(i.IIC_Write_Byte) for IIC_Write_Byte
+    i2c.o(i.I2C0SlaveRegReadMany) refers to i2c.o(i.IIC_Wait_Ack) for IIC_Wait_Ack
+    i2c.o(i.I2C0SlaveRegReadMany) refers to i2c.o(i.IIC_Read_Byte) for IIC_Read_Byte
+    i2c.o(i.I2C0SlaveRegReadMany) refers to i2c.o(i.IIC_Stop) for IIC_Stop
+    i2c.o(i.I2C0SlaveRegReadMany) refers to i2c.o(i.delay) for delay
+    i2c.o(i.I2C0SlaveRegRead_2Byte) refers to i2c.o(i.IIC_Start) for IIC_Start
+    i2c.o(i.I2C0SlaveRegRead_2Byte) refers to i2c.o(i.IIC_Write_Byte) for IIC_Write_Byte
+    i2c.o(i.I2C0SlaveRegRead_2Byte) refers to i2c.o(i.IIC_Wait_Ack) for IIC_Wait_Ack
+    i2c.o(i.I2C0SlaveRegRead_2Byte) refers to i2c.o(i.IIC_Read_Byte) for IIC_Read_Byte
+    i2c.o(i.I2C0SlaveRegRead_2Byte) refers to i2c.o(i.IIC_Stop) for IIC_Stop
+    i2c.o(i.I2C0SlaveRegRead_2Byte) refers to i2c.o(i.delay) for delay
+    i2c.o(i.I2C0SlaveRegWrite) refers to i2c.o(i.IIC_Start) for IIC_Start
+    i2c.o(i.I2C0SlaveRegWrite) refers to i2c.o(i.IIC_Write_Byte) for IIC_Write_Byte
+    i2c.o(i.I2C0SlaveRegWrite) refers to i2c.o(i.IIC_Wait_Ack) for IIC_Wait_Ack
+    i2c.o(i.I2C0SlaveRegWrite) refers to i2c.o(i.IIC_Stop) for IIC_Stop
+    i2c.o(i.I2C0SlaveRegWrite) refers to i2c.o(i.delay) for delay
+    i2c.o(i.I2C0SlaveRegWriteMany) refers to i2c.o(i.IIC_Start) for IIC_Start
+    i2c.o(i.I2C0SlaveRegWriteMany) refers to i2c.o(i.IIC_Write_Byte) for IIC_Write_Byte
+    i2c.o(i.I2C0SlaveRegWriteMany) refers to i2c.o(i.IIC_Wait_Ack) for IIC_Wait_Ack
+    i2c.o(i.I2C0SlaveRegWriteMany) refers to i2c.o(i.IIC_Stop) for IIC_Stop
+    i2c.o(i.I2C0SlaveRegWriteMany) refers to i2c.o(i.delay) for delay
+    i2c.o(i.I2C0SlaveRegWrite_2Byte) refers to i2c.o(i.IIC_Start) for IIC_Start
+    i2c.o(i.I2C0SlaveRegWrite_2Byte) refers to i2c.o(i.IIC_Write_Byte) for IIC_Write_Byte
+    i2c.o(i.I2C0SlaveRegWrite_2Byte) refers to i2c.o(i.IIC_Wait_Ack) for IIC_Wait_Ack
+    i2c.o(i.I2C0SlaveRegWrite_2Byte) refers to i2c.o(i.IIC_Stop) for IIC_Stop
+    i2c.o(i.I2C0SlaveRegWrite_2Byte) refers to i2c.o(i.delay) for delay
+    i2c.o(i.I2C0SlaveRegWrite_3Byte) refers to i2c.o(i.IIC_Start) for IIC_Start
+    i2c.o(i.I2C0SlaveRegWrite_3Byte) refers to i2c.o(i.IIC_Write_Byte) for IIC_Write_Byte
+    i2c.o(i.I2C0SlaveRegWrite_3Byte) refers to i2c.o(i.IIC_Wait_Ack) for IIC_Wait_Ack
+    i2c.o(i.I2C0SlaveRegWrite_3Byte) refers to i2c.o(i.IIC_Stop) for IIC_Stop
+    i2c.o(i.I2C0SlaveRegWrite_3Byte) refers to i2c.o(i.delay) for delay
+    i2c.o(i.I2C0SlaveRegWrite_4Byte) refers to i2c.o(i.IIC_Start) for IIC_Start
+    i2c.o(i.I2C0SlaveRegWrite_4Byte) refers to i2c.o(i.IIC_Write_Byte) for IIC_Write_Byte
+    i2c.o(i.I2C0SlaveRegWrite_4Byte) refers to i2c.o(i.IIC_Wait_Ack) for IIC_Wait_Ack
+    i2c.o(i.I2C0SlaveRegWrite_4Byte) refers to i2c.o(i.IIC_Stop) for IIC_Stop
+    i2c.o(i.I2C0SlaveRegWrite_4Byte) refers to i2c.o(i.delay) for delay
+    i2c.o(i.I2C0SlaveRegWrite_WithoutData) refers to i2c.o(i.IIC_Start) for IIC_Start
+    i2c.o(i.I2C0SlaveRegWrite_WithoutData) refers to i2c.o(i.IIC_Write_Byte) for IIC_Write_Byte
+    i2c.o(i.I2C0SlaveRegWrite_WithoutData) refers to i2c.o(i.IIC_Wait_Ack) for IIC_Wait_Ack
+    i2c.o(i.I2C0SlaveRegWrite_WithoutData) refers to i2c.o(i.IIC_Stop) for IIC_Stop
+    i2c.o(i.I2C0SlaveRegWrite_WithoutData) refers to i2c.o(i.delay) for delay
+    i2c.o(i.IIC_Ack) refers to i2c.o(i.SDA_OUTPUT) for SDA_OUTPUT
+    i2c.o(i.IIC_Ack) refers to i2c.o(i.delay) for delay
+    i2c.o(i.IIC_Ack) refers to i2c.o(i.SDA_LOW) for SDA_LOW
+    i2c.o(i.IIC_IOinit) refers to gpio.o(i.GPIO_SetMode) for GPIO_SetMode
+    i2c.o(i.IIC_IOinit) refers to i2c.o(i.SDA_HIGH) for SDA_HIGH
+    i2c.o(i.IIC_NAck) refers to i2c.o(i.SDA_OUTPUT) for SDA_OUTPUT
+    i2c.o(i.IIC_NAck) refers to i2c.o(i.delay) for delay
+    i2c.o(i.IIC_NAck) refers to i2c.o(i.SDA_HIGH) for SDA_HIGH
+    i2c.o(i.IIC_Read_Byte) refers to i2c.o(i.SDA_INPUT) for SDA_INPUT
+    i2c.o(i.IIC_Read_Byte) refers to i2c.o(i.delay) for delay
+    i2c.o(i.IIC_Read_Byte) refers to i2c.o(i.READ_SDA) for READ_SDA
+    i2c.o(i.IIC_Read_Byte) refers to i2c.o(i.IIC_NAck) for IIC_NAck
+    i2c.o(i.IIC_Read_Byte) refers to i2c.o(i.IIC_Ack) for IIC_Ack
+    i2c.o(i.IIC_Start) refers to i2c.o(i.SDA_OUTPUT) for SDA_OUTPUT
+    i2c.o(i.IIC_Start) refers to i2c.o(i.delay) for delay
+    i2c.o(i.IIC_Start) refers to i2c.o(i.SDA_HIGH) for SDA_HIGH
+    i2c.o(i.IIC_Start) refers to i2c.o(i.SDA_LOW) for SDA_LOW
+    i2c.o(i.IIC_Stop) refers to i2c.o(i.SDA_OUTPUT) for SDA_OUTPUT
+    i2c.o(i.IIC_Stop) refers to i2c.o(i.delay) for delay
+    i2c.o(i.IIC_Stop) refers to i2c.o(i.SDA_LOW) for SDA_LOW
+    i2c.o(i.IIC_Stop) refers to i2c.o(i.SDA_HIGH) for SDA_HIGH
+    i2c.o(i.IIC_Wait_Ack) refers to i2c.o(i.SDA_INPUT) for SDA_INPUT
+    i2c.o(i.IIC_Wait_Ack) refers to i2c.o(i.IIC_Stop) for IIC_Stop
+    i2c.o(i.IIC_Wait_Ack) refers to i2c.o(i.READ_SDA) for READ_SDA
+    i2c.o(i.IIC_Wait_Ack) refers to i2c.o(i.delay) for delay
+    i2c.o(i.IIC_Write_Byte) refers to i2c.o(i.SDA_OUTPUT) for SDA_OUTPUT
+    i2c.o(i.IIC_Write_Byte) refers to i2c.o(i.delay) for delay
+    i2c.o(i.IIC_Write_Byte) refers to i2c.o(i.SDA_HIGH) for SDA_HIGH
+    i2c.o(i.IIC_Write_Byte) refers to i2c.o(i.SDA_LOW) for SDA_LOW
+    i2c.o(i.SDA_INPUT) refers to gpio.o(i.GPIO_SetMode) for GPIO_SetMode
+    i2c.o(i.SDA_OUTPUT) refers to gpio.o(i.GPIO_SetMode) for GPIO_SetMode
+    main.o(i.CORE_Clock_Init) refers to clk.o(i.CLK_EnableXtalRC) for CLK_EnableXtalRC
+    main.o(i.CORE_Clock_Init) refers to clk.o(i.CLK_WaitClockReady) for CLK_WaitClockReady
+    main.o(i.CORE_Clock_Init) refers to clk.o(i.CLK_SetCoreClock) for CLK_SetCoreClock
+    main.o(i.SYS_Init) refers to main.o(i.CORE_Clock_Init) for CORE_Clock_Init
+    main.o(i.SYS_Init) refers to wdt_driver.o(i.WDT_Clock_Init) for WDT_Clock_Init
+    main.o(i.SYS_Init) refers to adc_driver.o(i.ADC_Clock_Init) for ADC_Clock_Init
+    main.o(i.SYS_Init) refers to 485_driver.o(i.U485_Clock_Init) for U485_Clock_Init
+    main.o(i.main) refers to main.o(i.SYS_Init) for SYS_Init
+    main.o(i.main) refers to buzzer.o(i.Buzzer_Gpio_Init) for Buzzer_Gpio_Init
+    main.o(i.main) refers to adc_driver.o(i.ADC_Init) for ADC_Init
+    main.o(i.main) refers to 485_driver.o(i.U485_Init) for U485_Init
+    main.o(i.main) refers to 485_driver.o(i.U485EN_Gpio_Init) for U485EN_Gpio_Init
+    main.o(i.main) refers to i2c.o(i.IIC_IOinit) for IIC_IOinit
+    main.o(i.main) refers to br262_driver.o(i.Init_BR262) for Init_BR262
+    main.o(i.main) refers to systick.o(i.SysTick_Init) for SysTick_Init
+    main.o(i.main) refers to 485_driver.o(i.U485rec_Interrupt_Enable) for U485rec_Interrupt_Enable
+    main.o(i.main) refers to 485_driver.o(i.U485SendData) for U485SendData
+    main.o(i.main) refers to wdt_driver.o(i.WDT_Reset_Count) for WDT_Reset_Count
+    main.o(i.main) refers to delay.o(i.delayms) for delayms
+    systick.o(i.SysTickDelayMs) refers to systick.o(i.SysTickInterrupt_Enable) for SysTickInterrupt_Enable
+    systick.o(i.SysTickDelayMs) refers to systick.o(i.SysTickInterrupt_Disable) for SysTickInterrupt_Disable
+    systick.o(i.SysTickDelayMs) refers to systick.o(.data) for SysTickDelay
+    systick.o(i.SysTick_Handler) refers to systick.o(i.SysTickInterrupt_Disable) for SysTickInterrupt_Disable
+    systick.o(i.SysTick_Handler) refers to systick.o(.data) for SysTickDelay
+    systick.o(i.SysTick_Init) refers to systick.o(i.NVIC_SetPriority) for NVIC_SetPriority
+    systick.o(i.SysTick_Init) refers to systick.o(i.SysTickInterrupt_Disable) for SysTickInterrupt_Disable
+    buzzer.o(i.Buzzer_Gpio_Init) refers to gpio.o(i.GPIO_SetMode) for GPIO_SetMode
+    buzzer.o(i.Process) refers to delay.o(i.delayms) for delayms
+    buzzer.o(i.Process) refers to detect.o(i.BR262_detect) for BR262_detect
+    buzzer.o(i.Process) refers to adc_driver.o(i.ADC_Sample) for ADC_Sample
+    buzzer.o(i.Process) refers to buzzer.o(.data) for ADC_Data
+    buzzer.o(i.Process) refers to detect.o(.data) for g_input
+    adc_driver.o(i.ADC_Clock_Init) refers to clk.o(i.CLK_EnableModuleClock) for CLK_EnableModuleClock
+    adc_driver.o(i.ADC_Clock_Init) refers to clk.o(i.CLK_SetModuleClock) for CLK_SetModuleClock
+    adc_driver.o(i.ADC_Init) refers to adc.o(i.ADC_Open) for ADC_Open
+    wdt_driver.o(i.WDT_Load_Value) refers to wdt_driver.o(i.SYS_UnlockReg) for SYS_UnlockReg
+    wdt_driver.o(i.WDT_Load_Value) refers to wdt.o(i.WDT_Open) for WDT_Open
+    wdt_driver.o(i.WDT_Reset_Count) refers to wdt_driver.o(i.SYS_UnlockReg) for SYS_UnlockReg
+    485_driver.o(i.U485EN_Gpio_Init) refers to gpio.o(i.GPIO_SetMode) for GPIO_SetMode
+    485_driver.o(i.U485RecData) refers to uart.o(i.UART_Read) for UART_Read
+    485_driver.o(i.U485SendData) refers to uart.o(i.UART_Write) for UART_Write
+    485_driver.o(i.U485_Clock_Init) refers to clk.o(i.CLK_EnableModuleClock) for CLK_EnableModuleClock
+    485_driver.o(i.U485_Clock_Init) refers to clk.o(i.CLK_SetModuleClock) for CLK_SetModuleClock
+    485_driver.o(i.U485_Init) refers to sys.o(i.SYS_ResetModule) for SYS_ResetModule
+    485_driver.o(i.U485_Init) refers to uart.o(i.UART_Open) for UART_Open
+    485_driver.o(i.UART1_IRQHandler) refers to 485_driver.o(i.U485RecData) for U485RecData
+    485_driver.o(i.UART1_IRQHandler) refers to uart.o(i.UART_Write) for UART_Write
+    485_driver.o(i.UART1_IRQHandler) refers to 485_driver.o(.bss) for RecBuffer
+    485_driver.o(i.UART1_IRQHandler) refers to 485_driver.o(.data) for b
+    clk.o(i.CLK_DisableCKO) refers to clk.o(i.CLK_DisableModuleClock) for CLK_DisableModuleClock
+    clk.o(i.CLK_EnableCKO) refers to clk.o(i.CLK_EnableModuleClock) for CLK_EnableModuleClock
+    clk.o(i.CLK_EnableCKO) refers to clk.o(i.CLK_SetModuleClock) for CLK_SetModuleClock
+    clk.o(i.CLK_EnablePLL) refers to clk.o(i.CLK_WaitClockReady) for CLK_WaitClockReady
+    clk.o(i.CLK_EnablePLL) refers to clk.o(i.CLK_GetPLLClockFreq) for CLK_GetPLLClockFreq
+    clk.o(i.CLK_EnablePLL) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    clk.o(i.CLK_GetCPUFreq) refers to system_nuc029xan.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    clk.o(i.CLK_GetCPUFreq) refers to system_nuc029xan.o(.data) for SystemCoreClock
+    clk.o(i.CLK_GetHCLKFreq) refers to system_nuc029xan.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    clk.o(i.CLK_GetHCLKFreq) refers to system_nuc029xan.o(.data) for SystemCoreClock
+    clk.o(i.CLK_GetPLLClockFreq) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    clk.o(i.CLK_SetCoreClock) refers to clk.o(i.CLK_EnablePLL) for CLK_EnablePLL
+    clk.o(i.CLK_SetCoreClock) refers to clk.o(i.CLK_SetHCLK) for CLK_SetHCLK
+    clk.o(i.CLK_SetHCLK) refers to system_nuc029xan.o(i.SystemCoreClockUpdate) for SystemCoreClockUpdate
+    i2c_1.o(i.I2C_GetBusClockFreq) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    i2c_1.o(i.I2C_GetBusClockFreq) refers to system_nuc029xan.o(.data) for SystemCoreClock
+    i2c_1.o(i.I2C_Open) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    i2c_1.o(i.I2C_Open) refers to system_nuc029xan.o(.data) for SystemCoreClock
+    i2c_1.o(i.I2C_SetBusClockFreq) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    i2c_1.o(i.I2C_SetBusClockFreq) refers to system_nuc029xan.o(.data) for SystemCoreClock
+    retarget.o(i.SendChar) refers to retarget.o(i.SendChar_ToUART) for SendChar_ToUART
+    retarget.o(i._ttywrch) refers to retarget.o(i.SendChar) for SendChar
+    retarget.o(i.fgetc) refers to retarget.o(i.GetChar) for GetChar
+    retarget.o(i.fputc) refers to retarget.o(i.SendChar) for SendChar
+    uart.o(i.CLK_GetPLLClockFreq) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    uart.o(i.UART_DisableInt) refers to uart.o(i.NVIC_DisableIRQ) for NVIC_DisableIRQ
+    uart.o(i.UART_EnableInt) refers to uart.o(i.NVIC_EnableIRQ) for NVIC_EnableIRQ
+    uart.o(i.UART_Open) refers to uart.o(i.CLK_GetPLLClockFreq) for CLK_GetPLLClockFreq
+    uart.o(i.UART_Open) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    uart.o(i.UART_Open) refers to uart.o(.constdata) for .constdata
+    uart.o(i.UART_SelectIrDAMode) refers to uart.o(i.CLK_GetPLLClockFreq) for CLK_GetPLLClockFreq
+    uart.o(i.UART_SelectIrDAMode) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    uart.o(i.UART_SelectIrDAMode) refers to uart.o(.constdata) for .constdata
+    uart.o(i.UART_SetLine_Config) refers to uart.o(i.CLK_GetPLLClockFreq) for CLK_GetPLLClockFreq
+    uart.o(i.UART_SetLine_Config) refers to aeabi_sdiv.o(.text) for __aeabi_uidivmod
+    uart.o(i.UART_SetLine_Config) refers to uart.o(.constdata) for .constdata
+    __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000C) for __rt_entry_postli_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000009) for __rt_entry_postsh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$00000002) for __rt_entry_presh_1
+    __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for __rt_entry_sh
+    aeabi_idiv0_sigfpe.o(.text) refers to rt_div0.o(.text) for __rt_div0
+    __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to main.o(i.main) for main
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for .ARM.Collect$$rtentry$$0000000A
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) for .ARM.Collect$$rtentry$$0000000B
+    __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for .ARM.Collect$$rtentry$$0000000D
+    __rtentry4.o(.ARM.Collect$$rtentry$$00000004) refers to sys_stackheap_outer.o(.text) for __user_setup_stackheap
+    __rtentry4.o(.ARM.exidx) refers to __rtentry4.o(.ARM.Collect$$rtentry$$00000004) for .ARM.Collect$$rtentry$$00000004
+    rt_div0.o(.text) refers to defsig_fpe_outer.o(.text) for __rt_SIGFPE
+    sys_stackheap_outer.o(.text) refers to libspace.o(.text) for __user_perproc_libspace
+    sys_stackheap_outer.o(.text) refers to startup_nuc029xan.o(.text) for __user_initial_stackheap
+    sys_stackheap_outer.o(__vectab_stack_and_reset_area) refers to tempstk.o(.text) for __temporary_stack_top
+    sys_stackheap_outer.o(__vectab_stack_and_reset_area) refers to __main.o(!!!main) for __main
+    exit.o(.text) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for __rt_exit
+    defsig_fpe_outer.o(.text) refers to defsig_fpe_inner.o(.text) for __rt_SIGFPE_inner
+    defsig_fpe_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_fpe_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002E) for __rt_lib_init_alloca_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000002C) for __rt_lib_init_argv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001B) for __rt_lib_init_atexit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000021) for __rt_lib_init_clock_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000032) for __rt_lib_init_cpp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000030) for __rt_lib_init_exceptions_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000002) for __rt_lib_init_fp_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001F) for __rt_lib_init_fp_trap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000023) for __rt_lib_init_getenv_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000A) for __rt_lib_init_heap_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000011) for __rt_lib_init_lc_collate_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000013) for __rt_lib_init_lc_ctype_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000015) for __rt_lib_init_lc_monetary_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000017) for __rt_lib_init_lc_numeric_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000019) for __rt_lib_init_lc_time_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000004) for __rt_lib_init_preinit_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000E) for __rt_lib_init_rand_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000033) for __rt_lib_init_return
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000001D) for __rt_lib_init_signal_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$00000025) for __rt_lib_init_stdio_1
+    libinit.o(.ARM.Collect$$libinit$$00000000) refers (Special) to libinit2.o(.ARM.Collect$$libinit$$0000000C) for __rt_lib_init_user_alloc_1
+    libspace.o(.text) refers to libspace.o(.bss) for __libspace_start
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.Collect$$rtexit$$00000000) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for __rt_exit_exit
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for __rt_exit_ls
+    rtexit.o(.ARM.exidx) refers (Special) to rtexit2.o(.ARM.Collect$$rtexit$$00000002) for __rt_exit_prels_1
+    rtexit.o(.ARM.exidx) refers to rtexit.o(.ARM.Collect$$rtexit$$00000000) for .ARM.Collect$$rtexit$$00000000
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    libinit2.o(.ARM.Collect$$libinit$$00000010) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000012) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000014) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000016) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000018) refers to libinit2.o(.ARM.Collect$$libinit$$0000000F) for .ARM.Collect$$libinit$$0000000F
+    libinit2.o(.ARM.Collect$$libinit$$00000026) refers to argv_veneer.o(.text) for __ARM_argv_veneer
+    libinit2.o(.ARM.Collect$$libinit$$00000027) refers to argv_veneer.o(.text) for __ARM_argv_veneer
+    sys_exit.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_exit.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    rtexit2.o(.ARM.Collect$$rtexit$$00000003) refers to libshutdown.o(.ARM.Collect$$libshutdown$$00000000) for __rt_lib_shutdown
+    rtexit2.o(.ARM.Collect$$rtexit$$00000004) refers to sys_exit.o(.text) for _sys_exit
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000001) for .ARM.Collect$$rtexit$$00000001
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000003) for .ARM.Collect$$rtexit$$00000003
+    rtexit2.o(.ARM.exidx) refers to rtexit2.o(.ARM.Collect$$rtexit$$00000004) for .ARM.Collect$$rtexit$$00000004
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to retarget.o(i._ttywrch) for _ttywrch
+    defsig.o(CL$$defsig) refers to defsig_fpe_inner.o(.text) for __rt_SIGFPE_inner
+    defsig.o(CL$$defsig) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    _get_argv_nomalloc.o(.text) refers (Special) to hrguard.o(.text) for __heap_region$guard
+    _get_argv_nomalloc.o(.text) refers to defsig_rtmem_outer.o(.text) for __rt_SIGRTMEM
+    _get_argv_nomalloc.o(.text) refers to sys_command.o(.text) for _sys_command_string
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000006) for __rt_lib_shutdown_fp_trap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E) for __rt_lib_shutdown_heap_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F) for __rt_lib_shutdown_return
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000009) for __rt_lib_shutdown_signal_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$00000003) for __rt_lib_shutdown_stdio_1
+    libshutdown.o(.ARM.Collect$$libshutdown$$00000000) refers (Special) to libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B) for __rt_lib_shutdown_user_alloc_1
+    sys_command.o(.text) refers (Special) to use_no_semi.o(.text) for __I$use$semihosting
+    sys_command.o(.text) refers (Special) to indicate_semi.o(.text) for __semihosting_library_function
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtmem_outer.o(.text) refers to defsig_rtmem_inner.o(.text) for __rt_SIGRTMEM_inner
+    defsig_rtmem_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_rtmem_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing system_nuc029xan.o(.rev16_text), (4 bytes).
+    Removing system_nuc029xan.o(.revsh_text), (4 bytes).
+    Removing br262_driver.o(.rev16_text), (4 bytes).
+    Removing br262_driver.o(.revsh_text), (4 bytes).
+    Removing br262_driver.o(i.BR262_Reset), (12 bytes).
+    Removing br262_driver.o(i.Get_Channel0_LongTerm_Energy), (22 bytes).
+    Removing br262_driver.o(i.Get_Channel0_ShortTerm_Energy), (22 bytes).
+    Removing br262_driver.o(i.Get_Channel1_LongTerm_Energy), (22 bytes).
+    Removing br262_driver.o(i.Get_Channel1_ShortTerm_Energy), (22 bytes).
+    Removing br262_driver.o(i.Get_Master_Volume), (50 bytes).
+    Removing br262_driver.o(i.Get_Preamp_Gain), (18 bytes).
+    Removing br262_driver.o(i.Set_Master_Volume), (26 bytes).
+    Removing br262_driver.o(i.Set_NR_Output), (26 bytes).
+    Removing br262_driver.o(i.Set_NS_Param), (438 bytes).
+    Removing br262_driver.o(.data), (6 bytes).
+    Removing detect.o(.rev16_text), (4 bytes).
+    Removing detect.o(.revsh_text), (4 bytes).
+    Removing detect.o(i.BR262_detect), (140 bytes).
+    Removing detect.o(.data), (11 bytes).
+    Removing i2c.o(.rev16_text), (4 bytes).
+    Removing i2c.o(.revsh_text), (4 bytes).
+    Removing i2c.o(i.I2C0SlaveRegRead), (96 bytes).
+    Removing i2c.o(i.I2C0SlaveRegReadMany), (124 bytes).
+    Removing i2c.o(i.I2C0SlaveRegRead_2Byte), (158 bytes).
+    Removing i2c.o(i.I2C0SlaveRegWriteMany), (148 bytes).
+    Removing i2c.o(i.I2C0SlaveRegWrite_3Byte), (120 bytes).
+    Removing i2c.o(i.I2C0SlaveRegWrite_WithoutData), (62 bytes).
+    Removing i2c.o(i.IIC_Ack), (60 bytes).
+    Removing i2c.o(i.IIC_NAck), (60 bytes).
+    Removing i2c.o(i.IIC_Read_Byte), (96 bytes).
+    Removing i2c.o(i.delay_ms), (30 bytes).
+    Removing main.o(.rev16_text), (4 bytes).
+    Removing main.o(.revsh_text), (4 bytes).
+    Removing delay.o(i.delays), (48 bytes).
+    Removing delay.o(i.delayus), (28 bytes).
+    Removing systick.o(.rev16_text), (4 bytes).
+    Removing systick.o(.revsh_text), (4 bytes).
+    Removing systick.o(i.SysTickDelayMs), (32 bytes).
+    Removing systick.o(i.SysTickInterrupt_Enable), (20 bytes).
+    Removing systick.o(i.SysTick_ClearIntFlag), (20 bytes).
+    Removing systick.o(i.SysTick_GetIntFlag), (20 bytes).
+    Removing buzzer.o(.rev16_text), (4 bytes).
+    Removing buzzer.o(.revsh_text), (4 bytes).
+    Removing buzzer.o(i.Process), (192 bytes).
+    Removing buzzer.o(.data), (20 bytes).
+    Removing adc_driver.o(.rev16_text), (4 bytes).
+    Removing adc_driver.o(.revsh_text), (4 bytes).
+    Removing adc_driver.o(i.ADC_Sample), (48 bytes).
+    Removing wdt_driver.o(.rev16_text), (4 bytes).
+    Removing wdt_driver.o(.revsh_text), (4 bytes).
+    Removing wdt_driver.o(i.WDT_Load_Value), (36 bytes).
+    Removing 485_driver.o(.rev16_text), (4 bytes).
+    Removing 485_driver.o(.revsh_text), (4 bytes).
+    Removing 485_driver.o(i.U485rec_Interrupt_Disable), (36 bytes).
+    Removing adc.o(.rev16_text), (4 bytes).
+    Removing adc.o(.revsh_text), (4 bytes).
+    Removing adc.o(i.ADC_Close), (36 bytes).
+    Removing adc.o(i.ADC_DisableHWTrigger), (20 bytes).
+    Removing adc.o(i.ADC_DisableInt), (68 bytes).
+    Removing adc.o(i.ADC_EnableHWTrigger), (84 bytes).
+    Removing adc.o(i.ADC_EnableInt), (68 bytes).
+    Removing clk.o(.rev16_text), (4 bytes).
+    Removing clk.o(.revsh_text), (4 bytes).
+    Removing clk.o(i.CLK_DisableCKO), (16 bytes).
+    Removing clk.o(i.CLK_DisableModuleClock), (36 bytes).
+    Removing clk.o(i.CLK_DisablePLL), (20 bytes).
+    Removing clk.o(i.CLK_DisableXtalRC), (16 bytes).
+    Removing clk.o(i.CLK_EnableCKO), (48 bytes).
+    Removing clk.o(i.CLK_GetCPUFreq), (16 bytes).
+    Removing clk.o(i.CLK_GetHCLKFreq), (16 bytes).
+    Removing clk.o(i.CLK_GetHXTFreq), (28 bytes).
+    Removing clk.o(i.CLK_Idle), (36 bytes).
+    Removing clk.o(i.CLK_PowerDown), (40 bytes).
+    Removing clk.o(i.CLK_SetSysTickClockSrc), (20 bytes).
+    Removing gpio.o(.rev16_text), (4 bytes).
+    Removing gpio.o(.revsh_text), (4 bytes).
+    Removing gpio.o(i.GPIO_DisableInt), (28 bytes).
+    Removing gpio.o(i.GPIO_EnableInt), (26 bytes).
+    Removing i2c_1.o(.rev16_text), (4 bytes).
+    Removing i2c_1.o(.revsh_text), (4 bytes).
+    Removing i2c_1.o(i.I2C_ClearTimeoutFlag), (10 bytes).
+    Removing i2c_1.o(i.I2C_Close), (44 bytes).
+    Removing i2c_1.o(i.I2C_DisableInt), (10 bytes).
+    Removing i2c_1.o(i.I2C_DisableTimeout), (10 bytes).
+    Removing i2c_1.o(i.I2C_DisableWakeup), (10 bytes).
+    Removing i2c_1.o(i.I2C_EnableInt), (10 bytes).
+    Removing i2c_1.o(i.I2C_EnableTimeout), (32 bytes).
+    Removing i2c_1.o(i.I2C_EnableWakeup), (10 bytes).
+    Removing i2c_1.o(i.I2C_GetBusClockFreq), (24 bytes).
+    Removing i2c_1.o(i.I2C_GetData), (8 bytes).
+    Removing i2c_1.o(i.I2C_GetIntFlag), (12 bytes).
+    Removing i2c_1.o(i.I2C_GetStatus), (6 bytes).
+    Removing i2c_1.o(i.I2C_Open), (64 bytes).
+    Removing i2c_1.o(i.I2C_SetBusClockFreq), (56 bytes).
+    Removing i2c_1.o(i.I2C_SetData), (4 bytes).
+    Removing i2c_1.o(i.I2C_SetSlaveAddr), (58 bytes).
+    Removing i2c_1.o(i.I2C_SetSlaveAddrMask), (48 bytes).
+    Removing i2c_1.o(i.I2C_Trigger), (50 bytes).
+    Removing retarget.o(.rev16_text), (4 bytes).
+    Removing retarget.o(.revsh_text), (4 bytes).
+    Removing retarget.o(i.GetChar), (32 bytes).
+    Removing retarget.o(i.IsDebugFifoEmpty), (20 bytes).
+    Removing retarget.o(i.SendChar), (12 bytes).
+    Removing retarget.o(i.SendChar_ToUART), (52 bytes).
+    Removing retarget.o(i._ttywrch), (12 bytes).
+    Removing retarget.o(i.ferror), (8 bytes).
+    Removing retarget.o(i.fgetc), (10 bytes).
+    Removing retarget.o(i.fputc), (16 bytes).
+    Removing retarget.o(i.kbhit), (20 bytes).
+    Removing retarget.o(.data), (8 bytes).
+    Removing sys.o(.rev16_text), (4 bytes).
+    Removing sys.o(.revsh_text), (4 bytes).
+    Removing sys.o(i.SYS_ClearResetSrc), (16 bytes).
+    Removing sys.o(i.SYS_DisableBOD), (18 bytes).
+    Removing sys.o(i.SYS_EnableBOD), (50 bytes).
+    Removing sys.o(i.SYS_GetBODStatus), (14 bytes).
+    Removing sys.o(i.SYS_GetResetSrc), (8 bytes).
+    Removing sys.o(i.SYS_IsRegLocked), (20 bytes).
+    Removing sys.o(i.SYS_ReadPDID), (8 bytes).
+    Removing sys.o(i.SYS_ResetCPU), (18 bytes).
+    Removing sys.o(i.SYS_ResetChip), (18 bytes).
+    Removing wdt.o(.rev16_text), (4 bytes).
+    Removing wdt.o(.revsh_text), (4 bytes).
+    Removing wdt.o(i.WDT_Open), (28 bytes).
+    Removing wwdt.o(.rev16_text), (4 bytes).
+    Removing wwdt.o(.revsh_text), (4 bytes).
+    Removing wwdt.o(i.WWDT_Open), (32 bytes).
+    Removing uart.o(.rev16_text), (4 bytes).
+    Removing uart.o(.revsh_text), (4 bytes).
+    Removing uart.o(i.NVIC_DisableIRQ), (20 bytes).
+    Removing uart.o(i.NVIC_EnableIRQ), (20 bytes).
+    Removing uart.o(i.UART_ClearIntFlag), (88 bytes).
+    Removing uart.o(i.UART_Close), (6 bytes).
+    Removing uart.o(i.UART_DisableFlowCtrl), (12 bytes).
+    Removing uart.o(i.UART_DisableInt), (40 bytes).
+    Removing uart.o(i.UART_EnableFlowCtrl), (30 bytes).
+    Removing uart.o(i.UART_EnableInt), (40 bytes).
+    Removing uart.o(i.UART_SelectIrDAMode), (140 bytes).
+    Removing uart.o(i.UART_SelectLINMode), (26 bytes).
+    Removing uart.o(i.UART_SelectRS485Mode), (32 bytes).
+    Removing uart.o(i.UART_SetLine_Config), (148 bytes).
+    Removing uart.o(i.UART_SetTimeoutCnt), (22 bytes).
+
+142 unused section(s) (total 4553 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    RESET                                    0x00000000   Section      192  startup_nuc029xan.o(RESET)
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardshut.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
+    ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_copy.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_idiv0_sigfpe.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  aeabi_idiv0.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_div0.o ABSOLUTE
+    ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
+    ../clib/angel/scatterp.s                 0x00000000   Number         0  __scatter.o ABSOLUTE
+    ../clib/angel/startup.s                  0x00000000   Number         0  __main.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  use_no_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap_outer.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
+    ../clib/angel/sys.s                      0x00000000   Number         0  tempstk.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
+    ../clib/division.s                       0x00000000   Number         0  aeabi_sdiv_div0.o ABSOLUTE
+    ../clib/division.s                       0x00000000   Number         0  aeabi_sdiv.o ABSOLUTE
+    ../clib/heapalloc.c                      0x00000000   Number         0  hrguard.o ABSOLUTE
+    ../clib/heapaux.c                        0x00000000   Number         0  heapauxi.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown2.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
+    ../clib/misc.s                           0x00000000   Number         0  printf_stubs.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_outer.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
+    ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
+    ../clib/stdlib.c                         0x00000000   Number         0  exit.o ABSOLUTE
+    ../fplib/cfplib/fpinit.c                 0x00000000   Number         0  fpinit.o ABSOLUTE
+    ..\Library\Device\Nuvoton\NUC029xAN\Source\ARM\startup_NUC029xAN.s 0x00000000   Number         0  startup_nuc029xan.o ABSOLUTE
+    ..\Library\Device\Nuvoton\NUC029xAN\Source\system_NUC029xAN.c 0x00000000   Number         0  system_nuc029xan.o ABSOLUTE
+    ..\Library\StdDriver\src\adc.c           0x00000000   Number         0  adc.o ABSOLUTE
+    ..\Library\StdDriver\src\clk.c           0x00000000   Number         0  clk.o ABSOLUTE
+    ..\Library\StdDriver\src\gpio.c          0x00000000   Number         0  gpio.o ABSOLUTE
+    ..\Library\StdDriver\src\i2c.c           0x00000000   Number         0  i2c_1.o ABSOLUTE
+    ..\Library\StdDriver\src\retarget.c      0x00000000   Number         0  retarget.o ABSOLUTE
+    ..\Library\StdDriver\src\sys.c           0x00000000   Number         0  sys.o ABSOLUTE
+    ..\Library\StdDriver\src\uart.c          0x00000000   Number         0  uart.o ABSOLUTE
+    ..\Library\StdDriver\src\wdt.c           0x00000000   Number         0  wdt.o ABSOLUTE
+    ..\Library\StdDriver\src\wwdt.c          0x00000000   Number         0  wwdt.o ABSOLUTE
+    ..\\Library\\Device\\Nuvoton\\NUC029xAN\\Source\\system_NUC029xAN.c 0x00000000   Number         0  system_nuc029xan.o ABSOLUTE
+    ..\\Library\\StdDriver\\src\\adc.c       0x00000000   Number         0  adc.o ABSOLUTE
+    ..\\Library\\StdDriver\\src\\clk.c       0x00000000   Number         0  clk.o ABSOLUTE
+    ..\\Library\\StdDriver\\src\\gpio.c      0x00000000   Number         0  gpio.o ABSOLUTE
+    ..\\Library\\StdDriver\\src\\i2c.c       0x00000000   Number         0  i2c_1.o ABSOLUTE
+    ..\\Library\\StdDriver\\src\\retarget.c  0x00000000   Number         0  retarget.o ABSOLUTE
+    ..\\Library\\StdDriver\\src\\sys.c       0x00000000   Number         0  sys.o ABSOLUTE
+    ..\\Library\\StdDriver\\src\\uart.c      0x00000000   Number         0  uart.o ABSOLUTE
+    ..\\Library\\StdDriver\\src\\wdt.c       0x00000000   Number         0  wdt.o ABSOLUTE
+    ..\\Library\\StdDriver\\src\\wwdt.c      0x00000000   Number         0  wwdt.o ABSOLUTE
+    485_Driver.c                             0x00000000   Number         0  485_driver.o ABSOLUTE
+    485_Driver.c                             0x00000000   Number         0  485_driver.o ABSOLUTE
+    ADC_Driver.c                             0x00000000   Number         0  adc_driver.o ABSOLUTE
+    ADC_Driver.c                             0x00000000   Number         0  adc_driver.o ABSOLUTE
+    BR262_Driver.c                           0x00000000   Number         0  br262_driver.o ABSOLUTE
+    BR262_Driver.c                           0x00000000   Number         0  br262_driver.o ABSOLUTE
+    Buzzer.c                                 0x00000000   Number         0  buzzer.o ABSOLUTE
+    Buzzer.c                                 0x00000000   Number         0  buzzer.o ABSOLUTE
+    I2C.c                                    0x00000000   Number         0  i2c.o ABSOLUTE
+    I2C.c                                    0x00000000   Number         0  i2c.o ABSOLUTE
+    WDT_Driver.c                             0x00000000   Number         0  wdt_driver.o ABSOLUTE
+    WDT_Driver.c                             0x00000000   Number         0  wdt_driver.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    delay.c                                  0x00000000   Number         0  delay.o ABSOLUTE
+    detect.c                                 0x00000000   Number         0  detect.o ABSOLUTE
+    detect.c                                 0x00000000   Number         0  detect.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    main.c                                   0x00000000   Number         0  main.o ABSOLUTE
+    systick.c                                0x00000000   Number         0  systick.o ABSOLUTE
+    systick.c                                0x00000000   Number         0  systick.o ABSOLUTE
+    !!!main                                  0x000000c0   Section        8  __main.o(!!!main)
+    !!!scatter                               0x000000c8   Section       60  __scatter.o(!!!scatter)
+    !!handler_copy                           0x00000104   Section       26  __scatter_copy.o(!!handler_copy)
+    !!handler_zi                             0x00000120   Section       28  __scatter_zi.o(!!handler_zi)
+    .ARM.Collect$$libinit$$00000000          0x0000013c   Section        2  libinit.o(.ARM.Collect$$libinit$$00000000)
+    .ARM.Collect$$libinit$$00000002          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000002)
+    .ARM.Collect$$libinit$$00000004          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000004)
+    .ARM.Collect$$libinit$$0000000A          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000A)
+    .ARM.Collect$$libinit$$0000000C          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    .ARM.Collect$$libinit$$0000000E          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000000E)
+    .ARM.Collect$$libinit$$00000011          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000011)
+    .ARM.Collect$$libinit$$00000013          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    .ARM.Collect$$libinit$$00000015          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    .ARM.Collect$$libinit$$00000017          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    .ARM.Collect$$libinit$$00000019          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    .ARM.Collect$$libinit$$0000001B          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    .ARM.Collect$$libinit$$0000001D          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    .ARM.Collect$$libinit$$0000001F          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    .ARM.Collect$$libinit$$00000021          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    .ARM.Collect$$libinit$$00000023          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    .ARM.Collect$$libinit$$00000025          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000025)
+    .ARM.Collect$$libinit$$0000002C          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002C)
+    .ARM.Collect$$libinit$$0000002E          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    .ARM.Collect$$libinit$$00000030          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    .ARM.Collect$$libinit$$00000032          0x0000013e   Section        0  libinit2.o(.ARM.Collect$$libinit$$00000032)
+    .ARM.Collect$$libinit$$00000033          0x0000013e   Section        2  libinit2.o(.ARM.Collect$$libinit$$00000033)
+    .ARM.Collect$$libshutdown$$00000000      0x00000140   Section        2  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    .ARM.Collect$$libshutdown$$00000003      0x00000142   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000003)
+    .ARM.Collect$$libshutdown$$00000006      0x00000142   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000006)
+    .ARM.Collect$$libshutdown$$00000009      0x00000142   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000009)
+    .ARM.Collect$$libshutdown$$0000000B      0x00000142   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B)
+    .ARM.Collect$$libshutdown$$0000000E      0x00000142   Section        0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E)
+    .ARM.Collect$$libshutdown$$0000000F      0x00000142   Section        2  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    .ARM.Collect$$rtentry$$00000000          0x00000144   Section        0  __rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    .ARM.Collect$$rtentry$$00000002          0x00000144   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    .ARM.Collect$$rtentry$$00000004          0x00000144   Section        6  __rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    .ARM.Collect$$rtentry$$00000009          0x0000014a   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    .ARM.Collect$$rtentry$$0000000A          0x0000014a   Section        4  __rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    .ARM.Collect$$rtentry$$0000000C          0x0000014e   Section        0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    .ARM.Collect$$rtentry$$0000000D          0x0000014e   Section        8  __rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    .ARM.Collect$$rtexit$$00000000           0x00000156   Section        2  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    .ARM.Collect$$rtexit$$00000002           0x00000158   Section        0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    .ARM.Collect$$rtexit$$00000003           0x00000158   Section        4  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    .ARM.Collect$$rtexit$$00000004           0x0000015c   Section        6  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    .text                                    0x00000164   Section      100  startup_nuc029xan.o(.text)
+    Default_Handler                          0x0000018f   Thumb Code     2  startup_nuc029xan.o(.text)
+    .text                                    0x000001c8   Section      346  aeabi_sdiv.o(.text)
+    .text                                    0x00000322   Section        0  heapauxi.o(.text)
+    .text                                    0x00000328   Section       62  sys_stackheap_outer.o(.text)
+    .text                                    0x00000366   Section        0  exit.o(.text)
+    .text                                    0x00000374   Section        8  libspace.o(.text)
+    .text                                    0x0000037c   Section        0  sys_exit.o(.text)
+    .text                                    0x00000388   Section        2  use_no_semi.o(.text)
+    .text                                    0x0000038a   Section        0  indicate_semi.o(.text)
+    i.ADC_Clock_Init                         0x0000038c   Section        0  adc_driver.o(i.ADC_Clock_Init)
+    i.ADC_Init                               0x000003a8   Section        0  adc_driver.o(i.ADC_Init)
+    i.ADC_Open                               0x0000040c   Section        0  adc.o(i.ADC_Open)
+    i.Buzzer_Gpio_Init                       0x00000438   Section        0  buzzer.o(i.Buzzer_Gpio_Init)
+    i.CLK_EnableModuleClock                  0x00000464   Section        0  clk.o(i.CLK_EnableModuleClock)
+    i.CLK_EnablePLL                          0x00000488   Section        0  clk.o(i.CLK_EnablePLL)
+    i.CLK_EnableXtalRC                       0x000005b0   Section        0  clk.o(i.CLK_EnableXtalRC)
+    i.CLK_GetPLLClockFreq                    0x000005c0   Section        0  system_nuc029xan.o(i.CLK_GetPLLClockFreq)
+    CLK_GetPLLClockFreq                      0x000005c1   Thumb Code   112  system_nuc029xan.o(i.CLK_GetPLLClockFreq)
+    i.CLK_GetPLLClockFreq                    0x00000640   Section        0  clk.o(i.CLK_GetPLLClockFreq)
+    CLK_GetPLLClockFreq                      0x00000641   Thumb Code   112  clk.o(i.CLK_GetPLLClockFreq)
+    i.CLK_GetPLLClockFreq                    0x000006c0   Section        0  uart.o(i.CLK_GetPLLClockFreq)
+    CLK_GetPLLClockFreq                      0x000006c1   Thumb Code   112  uart.o(i.CLK_GetPLLClockFreq)
+    i.CLK_SetCoreClock                       0x00000740   Section        0  clk.o(i.CLK_SetCoreClock)
+    i.CLK_SetHCLK                            0x00000794   Section        0  clk.o(i.CLK_SetHCLK)
+    i.CLK_SetModuleClock                     0x000007c0   Section        0  clk.o(i.CLK_SetModuleClock)
+    i.CLK_WaitClockReady                     0x00000824   Section        0  clk.o(i.CLK_WaitClockReady)
+    i.CORE_Clock_Init                        0x00000848   Section        0  main.o(i.CORE_Clock_Init)
+    CORE_Clock_Init                          0x00000849   Thumb Code    22  main.o(i.CORE_Clock_Init)
+    i.Change_BR262_DeviceMode                0x00000864   Section        0  br262_driver.o(i.Change_BR262_DeviceMode)
+    i.GPIO_SetMode                           0x00000876   Section        0  gpio.o(i.GPIO_SetMode)
+    i.I2C0SlaveRegWrite                      0x000008a4   Section        0  i2c.o(i.I2C0SlaveRegWrite)
+    i.I2C0SlaveRegWrite_2Byte                0x000008f6   Section        0  i2c.o(i.I2C0SlaveRegWrite_2Byte)
+    i.I2C0SlaveRegWrite_4Byte                0x0000095c   Section        0  i2c.o(i.I2C0SlaveRegWrite_4Byte)
+    i.IIC_IOinit                             0x000009e8   Section        0  i2c.o(i.IIC_IOinit)
+    i.IIC_Start                              0x00000a28   Section        0  i2c.o(i.IIC_Start)
+    i.IIC_Stop                               0x00000a60   Section        0  i2c.o(i.IIC_Stop)
+    i.IIC_Wait_Ack                           0x00000aa0   Section        0  i2c.o(i.IIC_Wait_Ack)
+    i.IIC_Write_Byte                         0x00000aec   Section        0  i2c.o(i.IIC_Write_Byte)
+    i.Init_BR262                             0x00000b48   Section        0  br262_driver.o(i.Init_BR262)
+    i.NVIC_SetPriority                       0x00000e1c   Section        0  systick.o(i.NVIC_SetPriority)
+    NVIC_SetPriority                         0x00000e1d   Thumb Code   110  systick.o(i.NVIC_SetPriority)
+    i.READ_SDA                               0x00000e94   Section        0  i2c.o(i.READ_SDA)
+    i.SDA_HIGH                               0x00000ea0   Section        0  i2c.o(i.SDA_HIGH)
+    i.SDA_INPUT                              0x00000eac   Section        0  i2c.o(i.SDA_INPUT)
+    i.SDA_LOW                                0x00000ec0   Section        0  i2c.o(i.SDA_LOW)
+    i.SDA_OUTPUT                             0x00000ecc   Section        0  i2c.o(i.SDA_OUTPUT)
+    i.SYS_Init                               0x00000ee0   Section        0  main.o(i.SYS_Init)
+    SYS_Init                                 0x00000ee1   Thumb Code    58  main.o(i.SYS_Init)
+    i.SYS_ResetModule                        0x00000f20   Section        0  sys.o(i.SYS_ResetModule)
+    i.SYS_UnlockReg                          0x00000f54   Section        0  wdt_driver.o(i.SYS_UnlockReg)
+    SYS_UnlockReg                            0x00000f55   Thumb Code    26  wdt_driver.o(i.SYS_UnlockReg)
+    i.Set_Channel0_EQ_Gain_Exponent          0x00000f74   Section        0  br262_driver.o(i.Set_Channel0_EQ_Gain_Exponent)
+    i.Set_Channel0_TalkMode                  0x00000f8e   Section        0  br262_driver.o(i.Set_Channel0_TalkMode)
+    i.Set_Channel1_EQ_Gain_Exponent          0x00000fa8   Section        0  br262_driver.o(i.Set_Channel1_EQ_Gain_Exponent)
+    i.Set_Channel1_TalkMode                  0x00000fc2   Section        0  br262_driver.o(i.Set_Channel1_TalkMode)
+    i.Set_Mixing_Destination                 0x00000fdc   Section        0  br262_driver.o(i.Set_Mixing_Destination)
+    i.Set_Mixing_Ratio                       0x00000ff6   Section        0  br262_driver.o(i.Set_Mixing_Ratio)
+    i.Set_Preamp_Gain                        0x00001010   Section        0  br262_driver.o(i.Set_Preamp_Gain)
+    i.SysTickInterrupt_Disable               0x00001028   Section        0  systick.o(i.SysTickInterrupt_Disable)
+    i.SysTick_Handler                        0x0000103c   Section        0  systick.o(i.SysTick_Handler)
+    i.SysTick_Init                           0x00001064   Section        0  systick.o(i.SysTick_Init)
+    i.SystemCoreClockUpdate                  0x000010b4   Section        0  system_nuc029xan.o(i.SystemCoreClockUpdate)
+    i.SystemInit                             0x00001118   Section        0  system_nuc029xan.o(i.SystemInit)
+    i.U485EN_Gpio_Init                       0x0000111c   Section        0  485_driver.o(i.U485EN_Gpio_Init)
+    i.U485RecData                            0x00001138   Section        0  485_driver.o(i.U485RecData)
+    i.U485SendData                           0x00001158   Section        0  485_driver.o(i.U485SendData)
+    i.U485_Clock_Init                        0x0000117c   Section        0  485_driver.o(i.U485_Clock_Init)
+    i.U485_Init                              0x00001194   Section        0  485_driver.o(i.U485_Init)
+    i.U485rec_Interrupt_Enable               0x000011d4   Section        0  485_driver.o(i.U485rec_Interrupt_Enable)
+    i.UART1_IRQHandler                       0x000011f8   Section        0  485_driver.o(i.UART1_IRQHandler)
+    i.UART_Open                              0x0000123c   Section        0  uart.o(i.UART_Open)
+    i.UART_Read                              0x000012d0   Section        0  uart.o(i.UART_Read)
+    i.UART_Write                             0x00001306   Section        0  uart.o(i.UART_Write)
+    i.WDT_Clock_Init                         0x0000133c   Section        0  wdt_driver.o(i.WDT_Clock_Init)
+    i.WDT_Reset_Count                        0x00001354   Section        0  wdt_driver.o(i.WDT_Reset_Count)
+    i.delay                                  0x00001380   Section        0  i2c.o(i.delay)
+    i.delayms                                0x00001390   Section        0  delay.o(i.delayms)
+    i.main                                   0x000013b0   Section        0  main.o(i.main)
+    .constdata                               0x0000142c   Section       32  system_nuc029xan.o(.constdata)
+    .constdata                               0x0000144c   Section       48  uart.o(.constdata)
+    .data                                    0x20000000   Section       12  system_nuc029xan.o(.data)
+    .data                                    0x2000000c   Section        4  systick.o(.data)
+    SysTickDelay                             0x2000000c   Data           4  systick.o(.data)
+    .data                                    0x20000010   Section        5  485_driver.o(.data)
+    .bss                                     0x20000018   Section       50  485_driver.o(.bss)
+    .bss                                     0x2000004c   Section       96  libspace.o(.bss)
+    HEAP                                     0x200000b0   Section        0  startup_nuc029xan.o(HEAP)
+    STACK                                    0x200000b0   Section      512  startup_nuc029xan.o(STACK)
+    Heap_Mem                                 0x200000b0   Data           0  startup_nuc029xan.o(HEAP)
+    Stack_Mem                                0x200000b0   Data         512  startup_nuc029xan.o(STACK)
+    __initial_sp                             0x200002b0   Data           0  startup_nuc029xan.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$ROPI$EBA8$UX$STANDARDLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup_nuc029xan.o(RESET)
+    _printf_flags                            0x00000000   Number         0  printf_stubs.o ABSOLUTE
+    _printf_return_value                     0x00000000   Number         0  printf_stubs.o ABSOLUTE
+    _printf_sizespec                         0x00000000   Number         0  printf_stubs.o ABSOLUTE
+    _printf_widthprec                        0x00000000   Number         0  printf_stubs.o ABSOLUTE
+    __ARM_exceptions_init                     - Undefined Weak Reference
+    __alloca_initialize                       - Undefined Weak Reference
+    __arm_preinit_                            - Undefined Weak Reference
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __rt_locale                               - Undefined Weak Reference
+    __sigvec_lookup                           - Undefined Weak Reference
+    _atexit_init                              - Undefined Weak Reference
+    _call_atexit_fns                          - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _fp_trap_init                             - Undefined Weak Reference
+    _fp_trap_shutdown                         - Undefined Weak Reference
+    _get_lc_collate                           - Undefined Weak Reference
+    _get_lc_ctype                             - Undefined Weak Reference
+    _get_lc_monetary                          - Undefined Weak Reference
+    _get_lc_numeric                           - Undefined Weak Reference
+    _get_lc_time                              - Undefined Weak Reference
+    _getenv_init                              - Undefined Weak Reference
+    _handle_redirection                       - Undefined Weak Reference
+    _init_alloc                               - Undefined Weak Reference
+    _init_user_alloc                          - Undefined Weak Reference
+    _initio                                   - Undefined Weak Reference
+    _rand_init                                - Undefined Weak Reference
+    _signal_finish                            - Undefined Weak Reference
+    _signal_init                              - Undefined Weak Reference
+    _terminate_alloc                          - Undefined Weak Reference
+    _terminate_user_alloc                     - Undefined Weak Reference
+    _terminateio                              - Undefined Weak Reference
+    __main                                   0x000000c1   Thumb Code     8  __main.o(!!!main)
+    __scatterload                            0x000000c9   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_rt2                        0x000000c9   Thumb Code    52  __scatter.o(!!!scatter)
+    __scatterload_rt2_thumb_only             0x000000c9   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_null                       0x000000d9   Thumb Code     0  __scatter.o(!!!scatter)
+    __scatterload_copy                       0x00000105   Thumb Code    26  __scatter_copy.o(!!handler_copy)
+    __scatterload_zeroinit                   0x00000121   Thumb Code    28  __scatter_zi.o(!!handler_zi)
+    __rt_lib_init                            0x0000013d   Thumb Code     0  libinit.o(.ARM.Collect$$libinit$$00000000)
+    __rt_lib_init_alloca_1                   0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002E)
+    __rt_lib_init_argv_1                     0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000002C)
+    __rt_lib_init_atexit_1                   0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001B)
+    __rt_lib_init_clock_1                    0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000021)
+    __rt_lib_init_cpp_1                      0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000032)
+    __rt_lib_init_exceptions_1               0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000030)
+    __rt_lib_init_fp_1                       0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000002)
+    __rt_lib_init_fp_trap_1                  0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001F)
+    __rt_lib_init_getenv_1                   0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000023)
+    __rt_lib_init_heap_1                     0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000A)
+    __rt_lib_init_lc_collate_1               0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000011)
+    __rt_lib_init_lc_ctype_1                 0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000013)
+    __rt_lib_init_lc_monetary_1              0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000015)
+    __rt_lib_init_lc_numeric_1               0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000017)
+    __rt_lib_init_lc_time_1                  0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000019)
+    __rt_lib_init_preinit_1                  0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000004)
+    __rt_lib_init_rand_1                     0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000E)
+    __rt_lib_init_return                     0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000033)
+    __rt_lib_init_signal_1                   0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000001D)
+    __rt_lib_init_stdio_1                    0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$00000025)
+    __rt_lib_init_user_alloc_1               0x0000013f   Thumb Code     0  libinit2.o(.ARM.Collect$$libinit$$0000000C)
+    __rt_lib_shutdown                        0x00000141   Thumb Code     0  libshutdown.o(.ARM.Collect$$libshutdown$$00000000)
+    __rt_lib_shutdown_fp_trap_1              0x00000143   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000006)
+    __rt_lib_shutdown_heap_1                 0x00000143   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E)
+    __rt_lib_shutdown_return                 0x00000143   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F)
+    __rt_lib_shutdown_signal_1               0x00000143   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000009)
+    __rt_lib_shutdown_stdio_1                0x00000143   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$00000003)
+    __rt_lib_shutdown_user_alloc_1           0x00000143   Thumb Code     0  libshutdown2.o(.ARM.Collect$$libshutdown$$0000000B)
+    __rt_entry                               0x00000145   Thumb Code     0  __rtentry.o(.ARM.Collect$$rtentry$$00000000)
+    __rt_entry_presh_1                       0x00000145   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$00000002)
+    __rt_entry_sh                            0x00000145   Thumb Code     0  __rtentry4.o(.ARM.Collect$$rtentry$$00000004)
+    __rt_entry_li                            0x0000014b   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000A)
+    __rt_entry_postsh_1                      0x0000014b   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$00000009)
+    __rt_entry_main                          0x0000014f   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000D)
+    __rt_entry_postli_1                      0x0000014f   Thumb Code     0  __rtentry2.o(.ARM.Collect$$rtentry$$0000000C)
+    __rt_exit                                0x00000157   Thumb Code     0  rtexit.o(.ARM.Collect$$rtexit$$00000000)
+    __rt_exit_ls                             0x00000159   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000003)
+    __rt_exit_prels_1                        0x00000159   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000002)
+    __rt_exit_exit                           0x0000015d   Thumb Code     0  rtexit2.o(.ARM.Collect$$rtexit$$00000004)
+    Reset_Handler                            0x00000165   Thumb Code    32  startup_nuc029xan.o(.text)
+    NMI_Handler                              0x00000185   Thumb Code     2  startup_nuc029xan.o(.text)
+    HardFault_Handler                        0x00000187   Thumb Code     2  startup_nuc029xan.o(.text)
+    SVC_Handler                              0x00000189   Thumb Code     2  startup_nuc029xan.o(.text)
+    PendSV_Handler                           0x0000018b   Thumb Code     2  startup_nuc029xan.o(.text)
+    ACMP01_IRQHandler                        0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    ACMP23_IRQHandler                        0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    ADC_IRQHandler                           0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    BOD_IRQHandler                           0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    EINT0_IRQHandler                         0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    EINT1_IRQHandler                         0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    GPIOP0P1_IRQHandler                      0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    GPIOP2P3P4_IRQHandler                    0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    I2C0_IRQHandler                          0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    I2C1_IRQHandler                          0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    PWMA_IRQHandler                          0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    PWMB_IRQHandler                          0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    PWRWU_IRQHandler                         0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    RTC_IRQHandler                           0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    SPI0_IRQHandler                          0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    SPI1_IRQHandler                          0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    TMR0_IRQHandler                          0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    TMR1_IRQHandler                          0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    TMR2_IRQHandler                          0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    TMR3_IRQHandler                          0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    UART0_IRQHandler                         0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    WDT_IRQHandler                           0x0000018f   Thumb Code     0  startup_nuc029xan.o(.text)
+    __user_initial_stackheap                 0x00000191   Thumb Code     0  startup_nuc029xan.o(.text)
+    __aeabi_uidiv                            0x000001c9   Thumb Code     0  aeabi_sdiv.o(.text)
+    __aeabi_uidivmod                         0x000001c9   Thumb Code    20  aeabi_sdiv.o(.text)
+    __aeabi_idiv                             0x000001dd   Thumb Code     0  aeabi_sdiv.o(.text)
+    __aeabi_idivmod                          0x000001dd   Thumb Code   326  aeabi_sdiv.o(.text)
+    __use_two_region_memory                  0x00000323   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_escrow$2region                 0x00000325   Thumb Code     2  heapauxi.o(.text)
+    __rt_heap_expand$2region                 0x00000327   Thumb Code     2  heapauxi.o(.text)
+    __user_setup_stackheap                   0x00000329   Thumb Code    62  sys_stackheap_outer.o(.text)
+    exit                                     0x00000367   Thumb Code    12  exit.o(.text)
+    __user_libspace                          0x00000375   Thumb Code     8  libspace.o(.text)
+    __user_perproc_libspace                  0x00000375   Thumb Code     0  libspace.o(.text)
+    __user_perthread_libspace                0x00000375   Thumb Code     0  libspace.o(.text)
+    _sys_exit                                0x0000037d   Thumb Code     8  sys_exit.o(.text)
+    __I$use$semihosting                      0x00000389   Thumb Code     0  use_no_semi.o(.text)
+    __use_no_semihosting_swi                 0x00000389   Thumb Code     2  use_no_semi.o(.text)
+    __semihosting_library_function           0x0000038b   Thumb Code     0  indicate_semi.o(.text)
+    ADC_Clock_Init                           0x0000038d   Thumb Code    22  adc_driver.o(i.ADC_Clock_Init)
+    ADC_Init                                 0x000003a9   Thumb Code    92  adc_driver.o(i.ADC_Init)
+    ADC_Open                                 0x0000040d   Thumb Code    34  adc.o(i.ADC_Open)
+    Buzzer_Gpio_Init                         0x00000439   Thumb Code    34  buzzer.o(i.Buzzer_Gpio_Init)
+    CLK_EnableModuleClock                    0x00000465   Thumb Code    32  clk.o(i.CLK_EnableModuleClock)
+    CLK_EnablePLL                            0x00000489   Thumb Code   258  clk.o(i.CLK_EnablePLL)
+    CLK_EnableXtalRC                         0x000005b1   Thumb Code    12  clk.o(i.CLK_EnableXtalRC)
+    CLK_SetCoreClock                         0x00000741   Thumb Code    70  clk.o(i.CLK_SetCoreClock)
+    CLK_SetHCLK                              0x00000795   Thumb Code    38  clk.o(i.CLK_SetHCLK)
+    CLK_SetModuleClock                       0x000007c1   Thumb Code    94  clk.o(i.CLK_SetModuleClock)
+    CLK_WaitClockReady                       0x00000825   Thumb Code    28  clk.o(i.CLK_WaitClockReady)
+    Change_BR262_DeviceMode                  0x00000865   Thumb Code    18  br262_driver.o(i.Change_BR262_DeviceMode)
+    GPIO_SetMode                             0x00000877   Thumb Code    46  gpio.o(i.GPIO_SetMode)
+    I2C0SlaveRegWrite                        0x000008a5   Thumb Code    82  i2c.o(i.I2C0SlaveRegWrite)
+    I2C0SlaveRegWrite_2Byte                  0x000008f7   Thumb Code   102  i2c.o(i.I2C0SlaveRegWrite_2Byte)
+    I2C0SlaveRegWrite_4Byte                  0x0000095d   Thumb Code   138  i2c.o(i.I2C0SlaveRegWrite_4Byte)
+    IIC_IOinit                               0x000009e9   Thumb Code    54  i2c.o(i.IIC_IOinit)
+    IIC_Start                                0x00000a29   Thumb Code    52  i2c.o(i.IIC_Start)
+    IIC_Stop                                 0x00000a61   Thumb Code    58  i2c.o(i.IIC_Stop)
+    IIC_Wait_Ack                             0x00000aa1   Thumb Code    72  i2c.o(i.IIC_Wait_Ack)
+    IIC_Write_Byte                           0x00000aed   Thumb Code    88  i2c.o(i.IIC_Write_Byte)
+    Init_BR262                               0x00000b49   Thumb Code   722  br262_driver.o(i.Init_BR262)
+    READ_SDA                                 0x00000e95   Thumb Code     8  i2c.o(i.READ_SDA)
+    SDA_HIGH                                 0x00000ea1   Thumb Code     8  i2c.o(i.SDA_HIGH)
+    SDA_INPUT                                0x00000ead   Thumb Code    14  i2c.o(i.SDA_INPUT)
+    SDA_LOW                                  0x00000ec1   Thumb Code     8  i2c.o(i.SDA_LOW)
+    SDA_OUTPUT                               0x00000ecd   Thumb Code    14  i2c.o(i.SDA_OUTPUT)
+    SYS_ResetModule                          0x00000f21   Thumb Code    46  sys.o(i.SYS_ResetModule)
+    Set_Channel0_EQ_Gain_Exponent            0x00000f75   Thumb Code    26  br262_driver.o(i.Set_Channel0_EQ_Gain_Exponent)
+    Set_Channel0_TalkMode                    0x00000f8f   Thumb Code    26  br262_driver.o(i.Set_Channel0_TalkMode)
+    Set_Channel1_EQ_Gain_Exponent            0x00000fa9   Thumb Code    26  br262_driver.o(i.Set_Channel1_EQ_Gain_Exponent)
+    Set_Channel1_TalkMode                    0x00000fc3   Thumb Code    26  br262_driver.o(i.Set_Channel1_TalkMode)
+    Set_Mixing_Destination                   0x00000fdd   Thumb Code    26  br262_driver.o(i.Set_Mixing_Destination)
+    Set_Mixing_Ratio                         0x00000ff7   Thumb Code    26  br262_driver.o(i.Set_Mixing_Ratio)
+    Set_Preamp_Gain                          0x00001011   Thumb Code    22  br262_driver.o(i.Set_Preamp_Gain)
+    SysTickInterrupt_Disable                 0x00001029   Thumb Code    14  systick.o(i.SysTickInterrupt_Disable)
+    SysTick_Handler                          0x0000103d   Thumb Code    34  systick.o(i.SysTick_Handler)
+    SysTick_Init                             0x00001065   Thumb Code    66  systick.o(i.SysTick_Init)
+    SystemCoreClockUpdate                    0x000010b5   Thumb Code    76  system_nuc029xan.o(i.SystemCoreClockUpdate)
+    SystemInit                               0x00001119   Thumb Code     2  system_nuc029xan.o(i.SystemInit)
+    U485EN_Gpio_Init                         0x0000111d   Thumb Code    20  485_driver.o(i.U485EN_Gpio_Init)
+    U485RecData                              0x00001139   Thumb Code    26  485_driver.o(i.U485RecData)
+    U485SendData                             0x00001159   Thumb Code    32  485_driver.o(i.U485SendData)
+    U485_Clock_Init                          0x0000117d   Thumb Code    20  485_driver.o(i.U485_Clock_Init)
+    U485_Init                                0x00001195   Thumb Code    52  485_driver.o(i.U485_Init)
+    U485rec_Interrupt_Enable                 0x000011d5   Thumb Code    26  485_driver.o(i.U485rec_Interrupt_Enable)
+    UART1_IRQHandler                         0x000011f9   Thumb Code    50  485_driver.o(i.UART1_IRQHandler)
+    UART_Open                                0x0000123d   Thumb Code   130  uart.o(i.UART_Open)
+    UART_Read                                0x000012d1   Thumb Code    54  uart.o(i.UART_Read)
+    UART_Write                               0x00001307   Thumb Code    54  uart.o(i.UART_Write)
+    WDT_Clock_Init                           0x0000133d   Thumb Code    12  wdt_driver.o(i.WDT_Clock_Init)
+    WDT_Reset_Count                          0x00001355   Thumb Code    34  wdt_driver.o(i.WDT_Reset_Count)
+    delay                                    0x00001381   Thumb Code    16  i2c.o(i.delay)
+    delayms                                  0x00001391   Thumb Code    28  delay.o(i.delayms)
+    main                                     0x000013b1   Thumb Code   108  main.o(i.main)
+    gau32ClkSrcTbl                           0x0000142c   Data          32  system_nuc029xan.o(.constdata)
+    Region$$Table$$Base                      0x0000147c   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x0000149c   Number         0  anon$$obj.o(Region$$Table)
+    SystemCoreClock                          0x20000000   Data           4  system_nuc029xan.o(.data)
+    CyclesPerUs                              0x20000004   Data           4  system_nuc029xan.o(.data)
+    PllClock                                 0x20000008   Data           4  system_nuc029xan.o(.data)
+    b                                        0x20000010   Data           5  485_driver.o(.data)
+    RecBuffer                                0x20000018   Data          50  485_driver.o(.bss)
+    __libspace_start                         0x2000004c   Data          96  libspace.o(.bss)
+    __temporary_stack_top$libspace           0x200000ac   Data           0  libspace.o(.bss)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000165
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x000014b4, Max: 0x00010000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x00000000, Size: 0x0000149c, Max: 0x00010000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x000000c0   Data   RO          109    RESET               startup_nuc029xan.o
+    0x000000c0   0x00000008   Code   RO         1424  * !!!main             c_p.l(__main.o)
+    0x000000c8   0x0000003c   Code   RO         1590    !!!scatter          c_p.l(__scatter.o)
+    0x00000104   0x0000001a   Code   RO         1592    !!handler_copy      c_p.l(__scatter_copy.o)
+    0x0000011e   0x00000002   PAD
+    0x00000120   0x0000001c   Code   RO         1594    !!handler_zi        c_p.l(__scatter_zi.o)
+    0x0000013c   0x00000002   Code   RO         1462    .ARM.Collect$$libinit$$00000000  c_p.l(libinit.o)
+    0x0000013e   0x00000000   Code   RO         1476    .ARM.Collect$$libinit$$00000002  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1478    .ARM.Collect$$libinit$$00000004  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1481    .ARM.Collect$$libinit$$0000000A  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1483    .ARM.Collect$$libinit$$0000000C  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1485    .ARM.Collect$$libinit$$0000000E  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1488    .ARM.Collect$$libinit$$00000011  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1490    .ARM.Collect$$libinit$$00000013  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1492    .ARM.Collect$$libinit$$00000015  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1494    .ARM.Collect$$libinit$$00000017  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1496    .ARM.Collect$$libinit$$00000019  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1498    .ARM.Collect$$libinit$$0000001B  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1500    .ARM.Collect$$libinit$$0000001D  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1502    .ARM.Collect$$libinit$$0000001F  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1504    .ARM.Collect$$libinit$$00000021  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1506    .ARM.Collect$$libinit$$00000023  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1508    .ARM.Collect$$libinit$$00000025  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1512    .ARM.Collect$$libinit$$0000002C  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1514    .ARM.Collect$$libinit$$0000002E  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1516    .ARM.Collect$$libinit$$00000030  c_p.l(libinit2.o)
+    0x0000013e   0x00000000   Code   RO         1518    .ARM.Collect$$libinit$$00000032  c_p.l(libinit2.o)
+    0x0000013e   0x00000002   Code   RO         1519    .ARM.Collect$$libinit$$00000033  c_p.l(libinit2.o)
+    0x00000140   0x00000002   Code   RO         1548    .ARM.Collect$$libshutdown$$00000000  c_p.l(libshutdown.o)
+    0x00000142   0x00000000   Code   RO         1575    .ARM.Collect$$libshutdown$$00000003  c_p.l(libshutdown2.o)
+    0x00000142   0x00000000   Code   RO         1578    .ARM.Collect$$libshutdown$$00000006  c_p.l(libshutdown2.o)
+    0x00000142   0x00000000   Code   RO         1581    .ARM.Collect$$libshutdown$$00000009  c_p.l(libshutdown2.o)
+    0x00000142   0x00000000   Code   RO         1583    .ARM.Collect$$libshutdown$$0000000B  c_p.l(libshutdown2.o)
+    0x00000142   0x00000000   Code   RO         1586    .ARM.Collect$$libshutdown$$0000000E  c_p.l(libshutdown2.o)
+    0x00000142   0x00000002   Code   RO         1587    .ARM.Collect$$libshutdown$$0000000F  c_p.l(libshutdown2.o)
+    0x00000144   0x00000000   Code   RO         1426    .ARM.Collect$$rtentry$$00000000  c_p.l(__rtentry.o)
+    0x00000144   0x00000000   Code   RO         1432    .ARM.Collect$$rtentry$$00000002  c_p.l(__rtentry2.o)
+    0x00000144   0x00000006   Code   RO         1444    .ARM.Collect$$rtentry$$00000004  c_p.l(__rtentry4.o)
+    0x0000014a   0x00000000   Code   RO         1434    .ARM.Collect$$rtentry$$00000009  c_p.l(__rtentry2.o)
+    0x0000014a   0x00000004   Code   RO         1435    .ARM.Collect$$rtentry$$0000000A  c_p.l(__rtentry2.o)
+    0x0000014e   0x00000000   Code   RO         1437    .ARM.Collect$$rtentry$$0000000C  c_p.l(__rtentry2.o)
+    0x0000014e   0x00000008   Code   RO         1438    .ARM.Collect$$rtentry$$0000000D  c_p.l(__rtentry2.o)
+    0x00000156   0x00000002   Code   RO         1467    .ARM.Collect$$rtexit$$00000000  c_p.l(rtexit.o)
+    0x00000158   0x00000000   Code   RO         1523    .ARM.Collect$$rtexit$$00000002  c_p.l(rtexit2.o)
+    0x00000158   0x00000004   Code   RO         1524    .ARM.Collect$$rtexit$$00000003  c_p.l(rtexit2.o)
+    0x0000015c   0x00000006   Code   RO         1525    .ARM.Collect$$rtexit$$00000004  c_p.l(rtexit2.o)
+    0x00000162   0x00000002   PAD
+    0x00000164   0x00000064   Code   RO          110  * .text               startup_nuc029xan.o
+    0x000001c8   0x0000015a   Code   RO         1418    .text               c_p.l(aeabi_sdiv.o)
+    0x00000322   0x00000006   Code   RO         1422    .text               c_p.l(heapauxi.o)
+    0x00000328   0x0000003e   Code   RO         1448    .text               c_p.l(sys_stackheap_outer.o)
+    0x00000366   0x0000000c   Code   RO         1451    .text               c_p.l(exit.o)
+    0x00000372   0x00000002   PAD
+    0x00000374   0x00000008   Code   RO         1463    .text               c_p.l(libspace.o)
+    0x0000037c   0x0000000c   Code   RO         1520    .text               c_p.l(sys_exit.o)
+    0x00000388   0x00000002   Code   RO         1537    .text               c_p.l(use_no_semi.o)
+    0x0000038a   0x00000000   Code   RO         1539    .text               c_p.l(indicate_semi.o)
+    0x0000038a   0x00000002   PAD
+    0x0000038c   0x0000001c   Code   RO          637    i.ADC_Clock_Init    adc_driver.o
+    0x000003a8   0x00000064   Code   RO          638    i.ADC_Init          adc_driver.o
+    0x0000040c   0x0000002c   Code   RO          783    i.ADC_Open          adc.o
+    0x00000438   0x0000002c   Code   RO          605    i.Buzzer_Gpio_Init  buzzer.o
+    0x00000464   0x00000024   Code   RO          833    i.CLK_EnableModuleClock  clk.o
+    0x00000488   0x00000128   Code   RO          834    i.CLK_EnablePLL     clk.o
+    0x000005b0   0x00000010   Code   RO          835    i.CLK_EnableXtalRC  clk.o
+    0x000005c0   0x00000080   Code   RO            3    i.CLK_GetPLLClockFreq  system_nuc029xan.o
+    0x00000640   0x00000080   Code   RO          839    i.CLK_GetPLLClockFreq  clk.o
+    0x000006c0   0x00000080   Code   RO         1298    i.CLK_GetPLLClockFreq  uart.o
+    0x00000740   0x00000054   Code   RO          842    i.CLK_SetCoreClock  clk.o
+    0x00000794   0x0000002c   Code   RO          843    i.CLK_SetHCLK       clk.o
+    0x000007c0   0x00000064   Code   RO          844    i.CLK_SetModuleClock  clk.o
+    0x00000824   0x00000024   Code   RO          846    i.CLK_WaitClockReady  clk.o
+    0x00000848   0x0000001c   Code   RO          444    i.CORE_Clock_Init   main.o
+    0x00000864   0x00000012   Code   RO          117    i.Change_BR262_DeviceMode  br262_driver.o
+    0x00000876   0x0000002e   Code   RO          957    i.GPIO_SetMode      gpio.o
+    0x000008a4   0x00000052   Code   RO          289    i.I2C0SlaveRegWrite  i2c.o
+    0x000008f6   0x00000066   Code   RO          291    i.I2C0SlaveRegWrite_2Byte  i2c.o
+    0x0000095c   0x0000008a   Code   RO          293    i.I2C0SlaveRegWrite_4Byte  i2c.o
+    0x000009e6   0x00000002   PAD
+    0x000009e8   0x00000040   Code   RO          296    i.IIC_IOinit        i2c.o
+    0x00000a28   0x00000038   Code   RO          299    i.IIC_Start         i2c.o
+    0x00000a60   0x00000040   Code   RO          300    i.IIC_Stop          i2c.o
+    0x00000aa0   0x0000004c   Code   RO          301    i.IIC_Wait_Ack      i2c.o
+    0x00000aec   0x0000005c   Code   RO          302    i.IIC_Write_Byte    i2c.o
+    0x00000b48   0x000002d2   Code   RO          124    i.Init_BR262        br262_driver.o
+    0x00000e1a   0x00000002   PAD
+    0x00000e1c   0x00000078   Code   RO          539    i.NVIC_SetPriority  systick.o
+    0x00000e94   0x0000000c   Code   RO          303    i.READ_SDA          i2c.o
+    0x00000ea0   0x0000000c   Code   RO          304    i.SDA_HIGH          i2c.o
+    0x00000eac   0x00000014   Code   RO          305    i.SDA_INPUT         i2c.o
+    0x00000ec0   0x0000000c   Code   RO          306    i.SDA_LOW           i2c.o
+    0x00000ecc   0x00000014   Code   RO          307    i.SDA_OUTPUT        i2c.o
+    0x00000ee0   0x00000040   Code   RO          445    i.SYS_Init          main.o
+    0x00000f20   0x00000034   Code   RO         1193    i.SYS_ResetModule   sys.o
+    0x00000f54   0x00000020   Code   RO          669    i.SYS_UnlockReg     wdt_driver.o
+    0x00000f74   0x0000001a   Code   RO          125    i.Set_Channel0_EQ_Gain_Exponent  br262_driver.o
+    0x00000f8e   0x0000001a   Code   RO          126    i.Set_Channel0_TalkMode  br262_driver.o
+    0x00000fa8   0x0000001a   Code   RO          127    i.Set_Channel1_EQ_Gain_Exponent  br262_driver.o
+    0x00000fc2   0x0000001a   Code   RO          128    i.Set_Channel1_TalkMode  br262_driver.o
+    0x00000fdc   0x0000001a   Code   RO          130    i.Set_Mixing_Destination  br262_driver.o
+    0x00000ff6   0x0000001a   Code   RO          131    i.Set_Mixing_Ratio  br262_driver.o
+    0x00001010   0x00000016   Code   RO          134    i.Set_Preamp_Gain   br262_driver.o
+    0x00001026   0x00000002   PAD
+    0x00001028   0x00000014   Code   RO          541    i.SysTickInterrupt_Disable  systick.o
+    0x0000103c   0x00000028   Code   RO          545    i.SysTick_Handler   systick.o
+    0x00001064   0x00000050   Code   RO          546    i.SysTick_Init      systick.o
+    0x000010b4   0x00000064   Code   RO            4    i.SystemCoreClockUpdate  system_nuc029xan.o
+    0x00001118   0x00000002   Code   RO            5    i.SystemInit        system_nuc029xan.o
+    0x0000111a   0x00000002   PAD
+    0x0000111c   0x0000001c   Code   RO          709    i.U485EN_Gpio_Init  485_driver.o
+    0x00001138   0x00000020   Code   RO          710    i.U485RecData       485_driver.o
+    0x00001158   0x00000024   Code   RO          711    i.U485SendData      485_driver.o
+    0x0000117c   0x00000018   Code   RO          712    i.U485_Clock_Init   485_driver.o
+    0x00001194   0x00000040   Code   RO          713    i.U485_Init         485_driver.o
+    0x000011d4   0x00000024   Code   RO          715    i.U485rec_Interrupt_Enable  485_driver.o
+    0x000011f8   0x00000044   Code   RO          716    i.UART1_IRQHandler  485_driver.o
+    0x0000123c   0x00000094   Code   RO         1307    i.UART_Open         uart.o
+    0x000012d0   0x00000036   Code   RO         1308    i.UART_Read         uart.o
+    0x00001306   0x00000036   Code   RO         1314    i.UART_Write        uart.o
+    0x0000133c   0x00000018   Code   RO          670    i.WDT_Clock_Init    wdt_driver.o
+    0x00001354   0x0000002c   Code   RO          672    i.WDT_Reset_Count   wdt_driver.o
+    0x00001380   0x00000010   Code   RO          308    i.delay             i2c.o
+    0x00001390   0x00000020   Code   RO          513    i.delayms           delay.o
+    0x000013b0   0x0000007c   Code   RO          446    i.main              main.o
+    0x0000142c   0x00000020   Data   RO            6    .constdata          system_nuc029xan.o
+    0x0000144c   0x00000030   Data   RO         1315    .constdata          uart.o
+    0x0000147c   0x00000020   Data   RO         1588    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x000002b0, Max: 0x00001000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x0000000c   Data   RW            7    .data               system_nuc029xan.o
+    0x2000000c   0x00000004   Data   RW          547    .data               systick.o
+    0x20000010   0x00000005   Data   RW          718    .data               485_driver.o
+    0x20000015   0x00000003   PAD
+    0x20000018   0x00000032   Zero   RW          717    .bss                485_driver.o
+    0x2000004a   0x00000002   PAD
+    0x2000004c   0x00000060   Zero   RW         1464    .bss                c_p.l(libspace.o)
+    0x200000ac   0x00000004   PAD
+    0x200000b0   0x00000000   Zero   RW          108    HEAP                startup_nuc029xan.o
+    0x200000b0   0x00000200   Zero   RW          107    STACK               startup_nuc029xan.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       288         62          0          5         50       9250   485_driver.o
+        44         10          0          0          0        867   adc.o
+       128         14          0          0          0        776   adc_driver.o
+       918          0          0          0          0       4497   br262_driver.o
+        44         10          0          0          0        387   buzzer.o
+       740         96          0          0          0       4746   clk.o
+        32          4          0          0          0        470   delay.o
+        46          0          0          0          0        867   gpio.o
+       766         52          0          0          0       6501   i2c.o
+       216         28          0          0          0      60807   main.o
+       100         46        192          0        512        664   startup_nuc029xan.o
+        52          6          0          0          0        442   sys.o
+       230         40         32         12          0      63671   system_nuc029xan.o
+       260         36          0          4          0       7556   systick.o
+       384         34         48          0          0       3225   uart.o
+       100         28          0          0          0      10171   wdt_driver.o
+
+    ----------------------------------------------------------------------
+      4356        466        304         24        564     174897   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         8          0          0          3          2          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+         8          0          0          0          0         68   __main.o
+         0          0          0          0          0          0   __rtentry.o
+        12          0          0          0          0          0   __rtentry2.o
+         6          0          0          0          0          0   __rtentry4.o
+        60          8          0          0          0          0   __scatter.o
+        26          0          0          0          0          0   __scatter_copy.o
+        28          0          0          0          0          0   __scatter_zi.o
+       346          0          0          0          0         92   aeabi_sdiv.o
+        12          0          0          0          0         64   exit.o
+         6          0          0          0          0        136   heapauxi.o
+         0          0          0          0          0          0   indicate_semi.o
+         2          0          0          0          0          0   libinit.o
+         2          0          0          0          0          0   libinit2.o
+         2          0          0          0          0          0   libshutdown.o
+         2          0          0          0          0          0   libshutdown2.o
+         8          4          0          0         96         68   libspace.o
+         2          0          0          0          0          0   rtexit.o
+        10          0          0          0          0          0   rtexit2.o
+        12          4          0          0          0         60   sys_exit.o
+        62          0          0          0          0         80   sys_stackheap_outer.o
+         2          0          0          0          0         68   use_no_semi.o
+
+    ----------------------------------------------------------------------
+       616         16          0          0        100        636   Library Totals
+         8          0          0          0          4          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       608         16          0          0         96        636   c_p.l
+
+    ----------------------------------------------------------------------
+       616         16          0          0        100        636   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      4972        482        304         24        664     172881   Grand Totals
+      4972        482        304         24        664     172881   ELF Image Totals
+      4972        482        304         24          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 5276 (   5.15kB)
+    Total RW  Size (RW Data + ZI Data)               688 (   0.67kB)
+    Total ROM Size (Code + RO Data + RW Data)       5300 (   5.18kB)
+
+==============================================================================
+

@@ -1,0 +1,27 @@
+--cpu Cortex-M0
+".\objects\system_nuc029xan.o"
+".\objects\startup_nuc029xan.o"
+".\objects\br262_driver.o"
+".\objects\detect.o"
+".\objects\i2c.o"
+".\objects\main.o"
+".\objects\delay.o"
+".\objects\systick.o"
+".\objects\buzzer.o"
+".\objects\adc_driver.o"
+".\objects\wdt_driver.o"
+".\objects\485_driver.o"
+".\objects\adc.o"
+".\objects\clk.o"
+".\objects\gpio.o"
+".\objects\i2c_1.o"
+".\objects\retarget.o"
+".\objects\sys.o"
+".\objects\wdt.o"
+".\objects\wwdt.o"
+".\objects\uart.o"
+--strict --scatter ".\Objects\PickUpWaring.sct"
+
+--entry Reset_Handler --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\PickUpWaring.map" -o .\Objects\PickUpWaring.axf

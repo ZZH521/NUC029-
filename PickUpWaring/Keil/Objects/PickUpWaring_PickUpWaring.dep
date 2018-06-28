@@ -1,0 +1,452 @@
+Dependencies for Project 'PickUpWaring', Target 'PickUpWaring': (DO NOT MODIFY !)
+F (..\Library\Device\Nuvoton\NUC029xAN\Source\system_NUC029xAN.c)(0x539AB33E)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\system_nuc029xan.o --omf_browse .\objects\system_nuc029xan.crf --depend .\objects\system_nuc029xan.d)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+F (..\Library\Device\Nuvoton\NUC029xAN\Source\ARM\startup_NUC029xAN.s)(0x539AB33E)(--cpu Cortex-M0 -g --apcs=interwork -I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 514"--list .\listings\startup_nuc029xan.lst --xref -o .\objects\startup_nuc029xan.o --depend .\objects\startup_nuc029xan.d)
+F (.\BR262_Driver.c)(0x5AF3DC6B)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\br262_driver.o --omf_browse .\objects\br262_driver.crf --depend .\objects\br262_driver.d)
+I (BR262_Driver.h)(0x5AF24E35)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+I (I2C.h)(0x5AF56D35)
+F (.\detect.c)(0x5B067ECD)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\detect.o --omf_browse .\objects\detect.crf --depend .\objects\detect.d)
+I (BR262_Driver.h)(0x5AF24E35)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+I (detect.h)(0x5B065EAC)
+F (.\I2C.c)(0x5AFBBCD5)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
+I (I2C.h)(0x5AF56D35)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+F (.\main.c)(0x5B20CB80)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (main.h)(0x5B208552)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (detect.h)(0x5B065EAC)
+I (BR262_Driver.h)(0x5AF24E35)
+I (I2C.h)(0x5AF56D35)
+I (systick.h)(0x5AFBBC70)
+I (delay.h)(0x5AFA97C6)
+I (buzzer.h)(0x5B066AAE)
+I (adc_driver.h)(0x5B0668F7)
+I (wdt_driver.h)(0x5B067040)
+I (485_driver.h)(0x5B20CA54)
+F (.\delay.c)(0x5B0627DE)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+I (delay.h)(0x5AFA97C6)
+F (.\systick.c)(0x5B0627DD)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
+I (systick.h)(0x5AFBBC70)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+F (.\Buzzer.c)(0x5B066AAE)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\buzzer.o --omf_browse .\objects\buzzer.crf --depend .\objects\buzzer.d)
+I (buzzer.h)(0x5B066AAE)
+I (delay.h)(0x5AFA97C6)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+I (detect.h)(0x5B065EAC)
+I (ADC_Driver.h)(0x5B0668F7)
+F (.\ADC_Driver.c)(0x5B092095)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\adc_driver.o --omf_browse .\objects\adc_driver.crf --depend .\objects\adc_driver.d)
+I (adc_driver.h)(0x5B0668F7)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+F (.\WDT_Driver.c)(0x5B0928AE)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\wdt_driver.o --omf_browse .\objects\wdt_driver.crf --depend .\objects\wdt_driver.d)
+I (wdt_driver.h)(0x5B067040)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+F (.\485_Driver.c)(0x5B20CBE1)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\485_driver.o --omf_browse .\objects\485_driver.crf --depend .\objects\485_driver.d)
+I (485_driver.h)(0x5B20CA54)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+F (..\Library\StdDriver\src\adc.c)(0x539AB33E)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+F (..\Library\StdDriver\src\clk.c)(0x539AB33E)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\clk.o --omf_browse .\objects\clk.crf --depend .\objects\clk.d)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+F (..\Library\StdDriver\src\gpio.c)(0x539AB33E)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\gpio.o --omf_browse .\objects\gpio.crf --depend .\objects\gpio.d)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+F (..\Library\StdDriver\src\i2c.c)(0x539AB33E)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\i2c_1.o --omf_browse .\objects\i2c_1.crf --depend .\objects\i2c_1.d)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+F (..\Library\StdDriver\src\retarget.c)(0x539AB33E)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\retarget.o --omf_browse .\objects\retarget.crf --depend .\objects\retarget.d)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+F (..\Library\StdDriver\src\sys.c)(0x539AB33E)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\sys.o --omf_browse .\objects\sys.crf --depend .\objects\sys.d)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+F (..\Library\StdDriver\src\wdt.c)(0x539AB33E)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\wdt.o --omf_browse .\objects\wdt.crf --depend .\objects\wdt.d)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+F (..\Library\StdDriver\src\wwdt.c)(0x539AB33E)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\wwdt.o --omf_browse .\objects\wwdt.crf --depend .\objects\wwdt.d)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
+F (..\Library\StdDriver\src\uart.c)(0x539AB33E)(-c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\Library\Device\Nuvoton\NUC029xAN\Include -I..\Library\CMSIS\Include -I..\Library\StdDriver\inc-I G:\STM32\MDK5\MDK5\ARM\RV31\INC-I G:\STM32\MDK5\MDK5\ARM\CMSIS\Include-D__UVISION_VERSION="514"-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\NUC029xAN.h)(0x539AB33E)
+I (..\Library\CMSIS\Include\core_cm0.h)(0x52FDD264)
+I (G:\STM32\MDK5\MDK5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Library\CMSIS\Include\core_cmInstr.h)(0x52FDD264)
+I (..\Library\CMSIS\Include\core_cmFunc.h)(0x52FDD264)
+I (..\Library\Device\Nuvoton\NUC029xAN\Include\system_NUC029xAN.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\sys.h)(0x5B04DE0A)
+I (..\Library\StdDriver\inc\clk.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\adc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\ebi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\fmc.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\gpio.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\i2c.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\pwm.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\spi.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\timer.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\wwdt.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\uart.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\hdiv.h)(0x539AB33E)
+I (..\Library\StdDriver\inc\acmp.h)(0x539AB33E)
